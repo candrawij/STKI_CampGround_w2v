@@ -1,0 +1,168 @@
+/* === 1. FONT & BACKGROUND UTAMA === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+html, body, [class*="st-"], [class*="css-"] {
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF; /* Teks default PUTIH */
+    scroll-behavior: smooth;
+}
+
+/* Background Utama dengan Gambar Hutan Malam */
+[data-testid="stAppViewContainer"] {
+    /* Ganti URL ini jika ingin gambar lain */
+    background-image: linear-gradient(rgba(10, 10, 25, 0.8), rgba(10, 10, 25, 0.8)), url("https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?q=80&w=2070&auto=format&fit=crop");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+[data-testid="stAppViewContainer"] > .main {
+    background-color: transparent !important;
+}
+
+/* === 2. KONTAINER UTAMA ("FROSTED GLASS") === */
+.main .block-container {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    background: rgba(26, 26, 46, 0.85); /* Biru tua transparan */
+    backdrop-filter: blur(10px) saturate(150%);
+    -webkit-backdrop-filter: blur(10px) saturate(150%);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 1200px !important;
+    margin: 2rem auto;
+}
+
+/* === 3. TIPOGRAFI === */
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF !important;
+    font-weight: 600;
+}
+p, div, label, span {
+    color: #eeeeee;
+}
+.stCaption {
+    color: #aaaaaa !important;
+}
+
+/* === 4. SEARCH BAR & INPUT === */
+[data-testid="stTextInput"] > div > div {
+    background: rgba(255, 255, 255, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+[data-testid="stTextInput"] input {
+    color: #FFFFFF !important;
+}
+[data-testid="stSelectbox"] > div > div {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* === 5. KOMPONEN CARD BARU (SCORECARD STYLE) === */
+/* Mengatur Container Card per Tempat */
+[data-testid="stVerticalBlock"] > [data-testid="stVerticalBlock"] {
+    background-color: rgba(40, 44, 52, 0.6);
+    border-radius: 12px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+[data-testid="stVerticalBlock"] > [data-testid="stVerticalBlock"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Gambar dalam Card */
+div[data-testid="stImage"] {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* === 6. FITUR BARU: INSIGHT BOX & BADGES === */
+.insight-box {
+    padding: 12px; 
+    background-color: rgba(0, 229, 255, 0.1); 
+    border-radius: 8px; 
+    border-left: 4px solid #00E5FF; /* Cyan Neon */
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #e0f7fa;
+    font-size: 0.95rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    font-size: 0.75em;
+    font-weight: bold;
+    color: white !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* === 7. PROGRESS BAR (SCORE) === */
+.stProgress > div > div > div > div {
+    background-color: #00E5FF; /* Warna Cyan untuk Bar */
+}
+
+/* === 8. TOMBOL (BUTTONS) === */
+.stButton > button {
+    background: linear-gradient(90deg, #ff4b4b, #ff2b2b);
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.stButton > button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(255, 75, 75, 0.4);
+}
+
+/* Tombol Link (Gmaps) */
+a[data-testid="stBaseLinkButton-secondary"] {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+a[data-testid="stBaseLinkButton-secondary"]:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: white;
+}
+
+/* === 9. SIDEBAR (ADMIN) === */
+[data-testid="stSidebar"] {
+    background-color: rgba(20, 20, 35, 0.95);
+    border-right: 1px solid rgba(255,255,255,0.1);
+}
+[data-testid="stSidebar"] h1, [data-testid="stSidebar"] h2, [data-testid="stSidebar"] h3 {
+    color: #00E5FF !important; /* Aksen Cyan di Sidebar */
+}
+
+/* === 10. RESPONSIVE MOBILE === */
+@media (max-width: 768px) {
+    .main .block-container {
+        padding: 1rem;
+        margin: 0.5rem;
+        max-width: 100%;
+    }
+    
+    /* Ubah layout kolom jadi tumpuk di HP */
+    [data-testid="stHorizontalBlock"] {
+        flex-direction: column;
+    }
+    
+    /* Perbesar ukuran tombol di HP */
+    .stButton > button {
+        padding: 0.8rem 1rem;
+    }
+}

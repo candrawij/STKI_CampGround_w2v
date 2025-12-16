@@ -1,0 +1,50 @@
+# 1. Virtual Environments (WAJIB)
+.venv/
+venv/
+env/
+
+# 2. Python Cache & Artifacts (WAJIB)
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# 3. Model AI & Aset Binary (SANGAT PENTING)
+# Kita ignore model jadi agar user melakukan training ulang (menghindari error versi numpy)
+Assets/*.model
+Assets/*.model.*
+Assets/*.npy
+# Kecuali Anda ingin menyimpan logo/gambar statis
+!Assets/*.png
+!Assets/*.jpg
+
+# 4. Log & Riwayat (SANGAT DIREKOMENDASIKAN)
+Riwayat/
+*.log
+
+# 5. Streamlit Secrets & Config
+.streamlit/secrets.toml
+# .streamlit/config.toml # Uncomment jika config lokal Anda aneh-aneh
+
+# 6. Playwright & Browser Session (WAJIB UTK SCRAPER)
+test-results/
+playwright-report/
+user_data_dir/
+browser_context/
+temp/
+
+# 7. File Spesifik OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 8. File Spesifik IDE
+.vscode/
+.idea/
+*.swp
+
+# 9. Browser Session & Cache
+chrome_session/
+user_data_dir/
+browser_context/
+.cache/

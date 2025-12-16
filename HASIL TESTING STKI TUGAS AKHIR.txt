@@ -1,0 +1,114 @@
+HASIL TESTING STKI TUGAS AKHIR 
+
+1.0
+- pembuatan mesin pencarian
+- pembuatan korpus
+
+1.1
+- penambahan korpus
+- upload ke github
+- penambahan fitur pengulangan pencarian
+
+1.2
+- Hasil region map (ada setelah 2. definisi fungsi helper) untuk maintenance jika mau ditambahkan daerah lain perlu ditambah juga untuk pemetaan daerah yang sesuai, termasuk jika ingin berupa kabupaten atau kecamatan, tidak hanya pencarian berdasarkan provinsi.
+- Hasil phrase map (ada sebelum 2. definisi fungsi helper) phrasa harus diupdate berkala jika ditemukan kata yang kurang sesuai.
+- Penambahan data pada korpus
+- penambahan fitur pencarian ALL, dan pencarian berdasarkan rating
+
+1.3
+- korpus berada di folder terpisah
+- penambahan folder baru bernama kamus yang berisi pemetaan frasa, region dan special intent
+- perbaikan di fitur intent ALL, sudah bisa menampilkan semua tempat kemah yang sesuai
+- penambahan fitur negasi **
+- perbaikan rating top dan bottom
+- penambahan data pada korpus
+
+1.4
+- penambahan kamus sudah semi otomatis
+- menggunakan asisten untuk mencari kata sesuai dengan pengelompokan kamus
+- hasil pengelompokan dijadikan file csv khusus di foleder kamus mentah
+- pencarian kata pada asisten sudah termasuk menghapus kata yang sudah dimasukan ke kamus, sehingga lebih efisien untuk input data
+
+1.5
+- periwayatan pencarian **
+- perbaikan frasa yang beresiko menimbulkan kesalahan
+- efisiensi dan integrasi data
+- periwayatan penambahan data dan proses pada mesin pencarian
+
+2.0
+- pemindahan kode dari ipynb ke py
+- pembuatan website
+- deploy Git (railway)
+- pembuatan Front-End sederhana dan Interaktivitas
+- pembuatan Back-End (API)
+
+# pemindahan kode dari ipynb ke py lumayan susah
+# hasil file pickle sesuai dengan kode yang baru
+# Front-End masih terlalu simple
+# kode menggunakan Flask, jadi pakai git saja
+
+2.0.1
+- peralihan deploy railway ke streamlit
+
+2.1
+- build_index.py menambahkan file info_tempat.csv berisi URL, dll untuk masuk ke file pkl
+- mesin pencari membaca URL foto dan gmaps
+- streamlit app memiliki tampilan yang lebih clean dan informatif
+- tombol popup untuk detail informasi dari lokasi, harga dan fasilitas
+- harga bisa ditotal, kecuali sewa, hanya harga dasar
+
+2.1.1
+- pembuatan popup pada menu lihat detail & harga
+- scaling foto yang konsisten, sehingga card terlihat rapi
+
+# foto sudah benar ukurannya dan card rapi, tapi foto terpotong dan tampilannya kurang terlihat, solusi antara muat foto ke lokal atau cari foto yg sesuai
+# info detail tidak memakai expand karena info yang diberikan terlalu kecil dan sedikit, tidak memakai modul karena error pada kode tampilnya
+
+2.1.2
+- penambahan korpus
+- build_index untuk membaca fasilitas di info_tempat lebih fleksibel, bisa membaca koma "," ataupun pipa "|"
+- beralih ke expand dengan penyesuaian
+
+# perhitungan harga masih jelek, belum bisa memisah hari libur dan hari biasa
+# history pencarian masih belum ditambahkan
+# beberapa query menghilangkan fitur harga dan fasilitas
+# website masih terlalu putih, tidak ada fariasi warna
+# foto dari google tidak bisa dibaca, harus ganti foto
+
+2.2
+- penyesuaian dengan soal UTS
+- penambahan folder src
+- penambahan kode eval, boolean ir, dan ranking
+
+2.2.1
+- perbaikan gitignore untuk akses streamlit
+
+2.3
+- penambahan asisten konfersi data input ke info tempat
+- penyesuaian kode dengan info tempat
+- penambahan kategori pada harga di info tempat
+- penambahan kolom waktu buka di info tempat
+- perbaikan css
+- penambahan sidebar untuk riwayat history
+
+2.3.1
+- perbaikan tampilan mobile
+
+
+RENCANA
+- perangkingan harga, pencarian berdasarkan harga mahal dan murah
+- tanggal terakhir review, tanggal terakhir update korpus
+- query frekuensi dari baik, cukup, buruk
+- penggunaan atau, dan (multiple choice)
+- pencarian terbalik, jika cari tempat kemah, maka muncul query atau index apa saja di tempat itu
+- tampilan diperbaiki untuk mobile
+- smart, bisa mengenali topik dari review, contoh tahu harga tiket, dll
+- pembacaan teks mentah yang lebih pintar
+
+NOTE
+- waduk sermo banyak tempat kemahnya, jadi bisa dispesifikkan lagi agar tahu ada tempat kemah apa aja
+- di karimun juga sama ada Lokasi-Lokasi Camping Favorit di Karimunjawa, bisa diperinci lagi
+
+- file asisten kamus masuk di folder lama, pembuatan kamus dengan asisten jadi lebih praktis, tapi masih harus menginputkan kata lagi ke kamus secara manual (bersihkan duplikasi dan join)
+- nilai relevansi masih kurang dari kata sempurna
+- pengelompokan wilayah seperti pantai, bukit, dll masih membingungkan sistem, mencari dari vsm atau teks mentah tidak begitu akurat
