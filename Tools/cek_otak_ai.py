@@ -1,5 +1,10 @@
 from gensim.models import Word2Vec
+import sys
 import os
+
+# Tambahkan folder root ke path agar bisa import 'src'
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from src import mesin_pencari
 
 # Path ke model
 MODEL_PATH = os.path.join('Assets', 'word2vec.model')
@@ -15,7 +20,10 @@ def cek_kepintaran():
     print(f"📊 Total Kosa Kata yang dipelajari: {len(model.wv.index_to_key)} kata.")
     
     # Daftar kata yang ingin dites
-    kata_tes = ['sejuk', 'bersih', 'mahal', 'bagus', 'toilet', 'malam']
+    kata_tes = [
+        'sejuk', 'bersih', 'mahal', 'bagus', 'toilet', 'malam', 
+        'akses', 'jalan', 'pandang', 'ramah', 'tenda', 'listrik','pantai'
+    ]
     
     print("\n--- 🧪 TES ASOSIASI KATA ---")
     for kata in kata_tes:
