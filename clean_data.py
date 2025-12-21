@@ -30,6 +30,9 @@ NAME_MAPPING = {
     # Kasus Typo Jelas (Boleh disatukan)
     "Watu gendong camping hills outbond center adventure": "Watu Gendong Camping Hills",
     "Watu Gendong Camping Hills Outbond Center Adventure": "Watu Gendong Camping Hills",
+
+    "Gunung Cilik Kaliurip Wonosobo": "Gunung Cilik Kaliurip Wonosobo",
+    "Kaliurip Mount": "Gunung Cilik Kaliurip Wonosobo",
     
     # [DIHAPUS] Bagian penyatuan Sikunir dihapus. 
     # Sikunir A dan Sikunir B akan tetap terpisah.
