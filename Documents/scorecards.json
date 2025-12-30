@@ -1740,6 +1740,66 @@
         "insight": "Pengunjung sangat menyukai pelayanan staff, namun perlu memperhatikan fasilitas umum.",
         "total_reviews": 150
     },
+    "Gunung Cilik Kaliurip Wonosobo": {
+        "aspects": {
+            "toilet": {
+                "label": "Fasilitas Toilet",
+                "icon": "🚽",
+                "pos": 17,
+                "neg": 2,
+                "mentions": 55,
+                "score": 4.6
+            },
+            "akses": {
+                "label": "Akses & Parkir",
+                "icon": "🛣️",
+                "pos": 80,
+                "neg": 7,
+                "mentions": 157,
+                "score": 4.7
+            },
+            "view": {
+                "label": "Pemandangan Alam",
+                "icon": "🍃",
+                "pos": 118,
+                "neg": 10,
+                "mentions": 226,
+                "score": 4.7
+            },
+            "kenyamanan": {
+                "label": "Area Camping",
+                "icon": "⛺",
+                "pos": 24,
+                "neg": 1,
+                "mentions": 53,
+                "score": 4.8
+            },
+            "pelayanan": {
+                "label": "Pelayanan Staff",
+                "icon": "🤝",
+                "pos": 41,
+                "neg": 4,
+                "mentions": 90,
+                "score": 4.6
+            },
+            "fasilitas": {
+                "label": "Fasilitas Umum",
+                "icon": "⚡",
+                "pos": 21,
+                "neg": 2,
+                "mentions": 42,
+                "score": 4.7
+            }
+        },
+        "badges": [
+            "keluarga",
+            "petualang",
+            "campervan",
+            "healing"
+        ],
+        "insight": "Pengunjung sangat menyukai area camping, namun perlu memperhatikan fasilitas toilet.",
+        "total_reviews": 393
+    },
     "Jogja Camp": {
         "aspects": {
             "toilet": {
@@ -2032,6 +2092,64 @@
         ],
         "insight": "Pengunjung sangat menyukai fasilitas toilet, namun perlu memperhatikan area camping.",
         "total_reviews": 5
+    },
+    "Nawang Jagad": {
+        "aspects": {
+            "toilet": {
+                "label": "Fasilitas Toilet",
+                "icon": "🚽",
+                "pos": 27,
+                "neg": 2,
+                "mentions": 81,
+                "score": 4.7
+            },
+            "akses": {
+                "label": "Akses & Parkir",
+                "icon": "🛣️",
+                "pos": 61,
+                "neg": 1,
+                "mentions": 122,
+                "score": 4.9
+            },
+            "view": {
+                "label": "Pemandangan Alam",
+                "icon": "🍃",
+                "pos": 206,
+                "neg": 5,
+                "mentions": 322,
+                "score": 4.9
+            },
+            "kenyamanan": {
+                "label": "Area Camping",
+                "icon": "⛺",
+                "pos": 74,
+                "neg": 1,
+                "mentions": 135,
+                "score": 4.9
+            },
+            "pelayanan": {
+                "label": "Pelayanan Staff",
+                "icon": "🤝",
+                "pos": 119,
+                "neg": 5,
+                "mentions": 221,
+                "score": 4.8
+            },
+            "fasilitas": {
+                "label": "Fasilitas Umum",
+                "icon": "⚡",
+                "pos": 44,
+                "neg": 2,
+                "mentions": 83,
+                "score": 4.8
+            }
+        },
+        "badges": [
+            "keluarga",
+            "healing"
+        ],
+        "insight": "Pengunjung sangat menyukai akses & parkir, namun perlu memperhatikan fasilitas toilet.",
+        "total_reviews": 493
     },
     "Ngrumput Beach": {
         "aspects": {
@@ -2735,6 +2853,64 @@
         ],
         "insight": "Kekuatan utama tempat ini adalah fasilitas toilet yang sangat memuaskan.",
         "total_reviews": 65
+    },
+    "Villa & Camping Ground Pinus Kenteng": {
+        "aspects": {
+            "toilet": {
+                "label": "Fasilitas Toilet",
+                "icon": "🚽",
+                "pos": 13,
+                "neg": 0,
+                "mentions": 18,
+                "score": 5.0
+            },
+            "akses": {
+                "label": "Akses & Parkir",
+                "icon": "🛣️",
+                "pos": 10,
+                "neg": 3,
+                "mentions": 15,
+                "score": 4.1
+            },
+            "view": {
+                "label": "Pemandangan Alam",
+                "icon": "🍃",
+                "pos": 16,
+                "neg": 0,
+                "mentions": 19,
+                "score": 5.0
+            },
+            "kenyamanan": {
+                "label": "Area Camping",
+                "icon": "⛺",
+                "pos": 40,
+                "neg": 0,
+                "mentions": 47,
+                "score": 5.0
+            },
+            "pelayanan": {
+                "label": "Pelayanan Staff",
+                "icon": "🤝",
+                "pos": 25,
+                "neg": 0,
+                "mentions": 29,
+                "score": 5.0
+            },
+            "fasilitas": {
+                "label": "Fasilitas Umum",
+                "icon": "⚡",
+                "pos": 17,
+                "neg": 3,
+                "mentions": 27,
+                "score": 4.4
+            }
+        },
+        "badges": [
+            "keluarga",
+            "healing"
+        ],
+        "insight": "Pengunjung sangat menyukai fasilitas toilet, namun perlu memperhatikan akses & parkir.",
+        "total_reviews": 167
     },
     "Waduk Sermo": {
         "aspects": {
