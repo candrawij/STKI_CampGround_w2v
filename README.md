@@ -47,6 +47,7 @@ Jika data pencarian atau database berantakan, reset ulang sistem dengan cara:
 | Role | Username | Password |
 | :--- | :--- | :--- |
 | **Admin** | `admin` | `admin123` |
-| **User** | `user` | `123` |
+| **User** | `test` | `123` |
 
 ---
+
